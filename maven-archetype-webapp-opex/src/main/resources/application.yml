@@ -12,6 +12,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/depot
     username: root
     password: root
+    type: com.zaxxer.hikari.HikariDataSource
 
 mybatis:
   config-locations: classpath:mybatis/mybatis-config.xml
