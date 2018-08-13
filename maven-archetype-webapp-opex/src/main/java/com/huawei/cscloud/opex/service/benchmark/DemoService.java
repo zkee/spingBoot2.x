@@ -1,4 +1,4 @@
-package com.huawei.cscloud.mavenarchetypewebappopex.controller;
+package com.huawei.cscloud.opex.service.benchmark;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.huawei.cscloud.mavenarchetypewebappopex.pojo.User;
+import com.huawei.cscloud.opex.pojo.DemoUser;
 
 @RestController
 @RequestMapping("api")
-public class DataController {
+public class DemoService {
 	
 	/**
 	 * get request demo
@@ -82,7 +82,7 @@ public class DataController {
 	 * @return
 	 */
 	@PostMapping("saveUser")
-	public User saveUser(@RequestBody User user)
+	public DemoUser saveUser(@RequestBody DemoUser user)
 	{
 		return user;
 	}
@@ -93,7 +93,7 @@ public class DataController {
 	 * @return
 	 */
 	@PostMapping("saveUserByToken")
-	public Map<String,Object> saveUser(@RequestHeader("token") String token, @RequestBody User user)
+	public Map<String,Object> saveUser(@RequestHeader("token") String token, @RequestBody DemoUser user)
 	{
 		Map<String,Object> resMap = new HashMap<String,Object>();
 		resMap.put("token", token);

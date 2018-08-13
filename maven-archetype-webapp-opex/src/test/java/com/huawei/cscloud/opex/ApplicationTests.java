@@ -1,4 +1,4 @@
-package com.huawei.cscloud.mavenarchetypewebappopex;
+package com.huawei.cscloud.opex;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MavenArchetypeWebappOpexApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {

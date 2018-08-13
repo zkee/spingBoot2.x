@@ -1,8 +1,8 @@
-package com.huawei.cscloud.mavenarchetypewebappopex.pojo;
+package com.huawei.cscloud.opex.pojo;
 
 import java.io.Serializable;
 
-public class User implements Serializable{
+public class DemoUser implements Serializable{
 
 	/**
 	 * 
